@@ -1,0 +1,21 @@
+html, body {
+  text-align: center;
+}
+label {
+  display: block;
+  margin: .5em;
+  font-size: 18px;
+  font-weight: bold;
+}
+select {
+  padding: .5em;
+}
+option::selection {
+  background-color: #0000ff;
+  color: #f00;
+}
+p {
+  width: 25%;
+  margin: 1em auto;
+  padding: .2em;
+}
