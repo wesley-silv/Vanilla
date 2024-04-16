@@ -32,7 +32,7 @@ function managementValues() {
 
   let afterPayment = receivedValue - (tithe + paymentResult)
 
-  if (paymentResult > 0) {
+  if (paymentResult != 0) {
     let viewResult = document.getElementById('results')
     viewResult.style.display = 'block'
     viewResult.innerHTML = `Payment result R$ ${paymentResult}`

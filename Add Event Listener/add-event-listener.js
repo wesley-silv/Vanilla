@@ -1,24 +1,25 @@
 selection = document.getElementById('select-machine')
-showInDisplay = document.querySelector('p')
+showInDisplay = document.querySelector('.show-in-display')
 
-selection.addEventListener('change', select) // change is used when un tag option inside of selection is selected.
+selection.addEventListener('change', consilux) // change is used when un tag option inside of selection is selected.
 
-function select() {
+function consilux() {
   const choise = selection.value
 
-  if (choise == 2800017) {
+  if (choise === '2800017') {
     showInDisplay.innerHTML = 'The equipment number is 2800017'
     showInDisplay.style.backgroundColor = '#c0c0c0'
-  } else if (choise == 2800032) {
+    showInDisplay.style.padding = '.5em'
+  } else if (choise === '2800032') {
     showInDisplay.innerHTML = 'The equipment number is 2800032'
     showInDisplay.style.backgroundColor = '#c0c0c0'
-  } else if (choise == 2800063) {
+  } else if (choise === '2800063') {
     showInDisplay.innerHTML = 'The equipment number is 2800063'
     showInDisplay.style.backgroundColor = '#c0c0c0'
-  } else if (choise == 2800093) {
+  } else if (choise === '2800093') {
     showInDisplay.innerHTML = 'The equipment number is 2800093'
     showInDisplay.style.backgroundColor = '#c0c0c0'
-  } else if (choise == 2800097) {
+  } else if (choise === '2800097') {
     showInDisplay.innerHTML = 'The equipment number is 2800097'
     showInDisplay.style.backgroundColor = '#c0c0c0'
   } else {

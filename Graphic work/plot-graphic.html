@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Exemplo</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id="plotly-chart"></div>
+
+    <script>
+        // Dados de exemplo
+        const data = [
+            { x: ['Tarefa 1', 'Tarefa 2', 'Tarefa 3', 'Tarefa 4', 'Activity 5'], y: [20, 14, 23, 25, 40], type: 'bar' }
+        ];
+
+        // Layout do gráfico
+        const layout = {
+            title: 'Grafic of project',
+            xaxis: { title: 'Time' },
+            yaxis: { title: 'Progress' }
+        };
+
+        // Crie o gráfico
+        Plotly.newPlot('plotly-chart', data, layout);
+    </script>
+</body>
+</html>
