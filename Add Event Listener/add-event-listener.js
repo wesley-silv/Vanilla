@@ -21,28 +21,6 @@ function consilux() {
     showInDisplay.innerHTML = 'The equipment number is 2800093'
     showInDisplay.style.backgroundColor = '#c0c0c0'
   } else if (choise === '2800097') {
-=======
-showInDisplay = document.querySelector('p')
-
-selection.addEventListener('change', select) // change is used when un tag option inside of selection is selected.
-
-function select() {
-  const choise = selection.value
-
-  if (choise == 2800017) {
-    showInDisplay.innerHTML = 'The equipment number is 2800017'
-    showInDisplay.style.backgroundColor = '#c0c0c0'
-  } else if (choise == 2800032) {
-    showInDisplay.innerHTML = 'The equipment number is 2800032'
-    showInDisplay.style.backgroundColor = '#c0c0c0'
-  } else if (choise == 2800063) {
-    showInDisplay.innerHTML = 'The equipment number is 2800063'
-    showInDisplay.style.backgroundColor = '#c0c0c0'
-  } else if (choise == 2800093) {
-    showInDisplay.innerHTML = 'The equipment number is 2800093'
-    showInDisplay.style.backgroundColor = '#c0c0c0'
-  } else if (choise == 2800097) {
->>>>>>> eaf3d452349cca87dedcfbbeba6a286628d928f2
     showInDisplay.innerHTML = 'The equipment number is 2800097'
     showInDisplay.style.backgroundColor = '#c0c0c0'
   } else {
