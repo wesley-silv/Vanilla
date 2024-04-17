@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renderizar String em Botão</title>
+  </head>
+  <body>
+    <button id="callRender">Clique para Renderizar</button>
+    <p id="elementRender"></p>
+
+    <script>
+      function renderizarString(string, tempo) {
+        let index = 0
+        const renderInterval = setInterval(function () {
+          if (index < string.length) {
+            document.getElementById('elementRender').innerText += string[index]
+            index++
+          } else {
+            clearInterval(renderInterval)
+          }
+        }, tempo)
+      }
+
+      document
+        .getElementById('callRender')
+        .addEventListener('click', function () {
+          const texto = 'Olá, mundo!  \nThis code\n is \nJavaScript'.toUpperCase()
+          const intervalo = 200 // em milissegundos
+          renderizarString(texto, intervalo)
+        })
+    </script>
+  </body>
+</html>

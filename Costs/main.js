@@ -16,7 +16,6 @@ function managementValues() {
   let fuel = parseFloat(document.getElementById('fuel').value)
   let foods = parseFloat(document.getElementById('foods').value)
   let others = parseFloat(document.getElementById('others').value)
-
   let paymentResult =
     car +
     rent +
@@ -32,7 +31,7 @@ function managementValues() {
 
   let afterPayment = receivedValue - (tithe + paymentResult)
 
-  if (paymentResult > 0) {
+  if (paymentResult != 0) {
     let viewResult = document.getElementById('results')
     viewResult.style.display = 'block'
     viewResult.innerHTML = `Payment result R$ ${paymentResult}`
