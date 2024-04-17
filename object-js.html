@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript HTML DOM</title>
+  <style>
+    html, body {
+      font-size: 18px;
+      margin: 0;
+    }
+    h1, h3 {
+      padding: .5em;
+      margin: 0 0 1.2em;
+      text-align: center;
+      background-color: #f0f0d9;
+    }
+    p {
+      margin: 1em;
+    }
+    span {
+      color: #0000ff;
+    }
+    span:hover {
+      cursor: pointer;
+    }
+    ol {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    Destined to understanding the use of DOM with JavaScript
+  </h1>
+  <div>
+    <p  id="change-color" onclick="useProperty()">
+      The DOM is a default object of programming interface to HTML, to DOM all HTML are objects winch have <span>properties</span> and <span>values</span> <br> Touch in this text to use a method to select this elemente and property to change your color.
+    </p>
+    <p onclick="useMethod()" id="change-text">
+      Use the method to change the HTML content, <span>touch me to see!</span>
+    </p>
+    <p>
+      The JavaScript available methods to find elements, create elements, update elements and delete elements, such as <span><code>getElementById</code></span>
+    </p>
+    <ol>
+      <h4>
+        Properties
+      </h4>
+      <li>element.<span>innerHTML</span> =  new html content</li>
+      <li>element.<span>attribute</span> = new value</li>
+      <li>element.<span>style.property</span> = new style</li>
+      <br>
+      <h4>
+        Methods
+      </h4>
+      <li>element.<span>setAttribute(attribute, value)</span> =  new html content</li>
+      <li>element.<span>createElement(element)</span> = new value</li>
+      <li>element.<span>removeChild(element)</span> = new style</li>
+    </ol>
+    <p>
+      There be many more methods that can be accessed through of JavaScript, search these methods to view yours applications in real projects. 
+    </p>
+    <h3>
+      DOM elements
+    </h3>
+  </div>
+</body>
+<script>
+  let useProperty = function () {
+    document.getElementById('change-color').style.color = '#ff0000'
+  }
+  let useMethod = function () {
+    document.getElementById('change-text').innerHTML = 'You used the method now! This method change the textual content HTML.'
+  }
+</script>
+</script>
+</html>

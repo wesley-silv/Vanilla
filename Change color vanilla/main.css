@@ -1,0 +1,24 @@
+:root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigation {
+  height: 4em;
+  width: 100%;
+  padding: 1em;
+  background-color: #c0c0c0;
+  box-sizing: border-box;
+
+}
+#select-colors {
+  width: 120px;
+  text-align: left;
+  border: solid 1px #000080;
+  border-radius: 4px;
+  margin: 0 8px;
+  padding: .2em;
+}

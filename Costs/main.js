@@ -16,6 +16,7 @@ function managementValues() {
   let fuel = parseFloat(document.getElementById('fuel').value)
   let foods = parseFloat(document.getElementById('foods').value)
   let others = parseFloat(document.getElementById('others').value)
+<<<<<<< HEAD
 
   let paymentResult =
     car +
@@ -33,6 +34,25 @@ function managementValues() {
   let afterPayment = receivedValue - (tithe + paymentResult)
 
   if (paymentResult != 0) {
+=======
+
+  let paymentResult =
+    car +
+    rent +
+    credeCard +
+    nubankCard +
+    internet +
+    water +
+    eletricEnergy +
+    phone +
+    fuel +
+    foods +
+    others
+
+  let afterPayment = receivedValue - (tithe + paymentResult)
+
+  if (paymentResult > 0) {
+>>>>>>> eaf3d452349cca87dedcfbbeba6a286628d928f2
     let viewResult = document.getElementById('results')
     viewResult.style.display = 'block'
     viewResult.innerHTML = `Payment result R$ ${paymentResult}`

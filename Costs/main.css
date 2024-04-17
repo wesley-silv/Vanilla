@@ -71,6 +71,7 @@ hr {
   text-align: center;
   color: #000080;
   list-style-type: none;
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 425px) {
@@ -80,4 +81,6 @@ hr {
   .view-results {
     width: 80%
   }
+=======
+>>>>>>> eaf3d452349cca87dedcfbbeba6a286628d928f2
 }
